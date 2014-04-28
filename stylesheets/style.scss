@@ -1,0 +1,77 @@
+$primary_color: #fff;
+$font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_color: #181818;
+
+@mixin cover($url) {
+    background: url($url) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+// Overrides to the base.css from skeleton
+body, html {
+    height: 100%;
+}
+hr {
+    margin: 15px 0 15px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font;
+}
+.container {
+    min-height: 100%;
+}
+
+// Custom css
+.lead {
+    border-left: 5px solid $font_color;
+    margin-left: -10px;
+    padding-left: 5px;
+}
+.title {
+    @include cover('../images/circuit.jpg');
+    height: 100%;
+    position: relative;
+    text-align: center;
+    span {
+        position: absolute;
+        bottom: 0;
+        display: inline-block;
+        h1 {
+            color: #fff;
+        }
+    }
+    .text {
+        position: absolute;
+        text-align: center;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+        height: 20%;
+        width: 40%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        h1, h4 {
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
